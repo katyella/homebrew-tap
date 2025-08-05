@@ -5,21 +5,21 @@
 class Lazyoc < Formula
   desc "A lazy terminal UI for OpenShift/Kubernetes clusters"
   homepage "https://github.com/katyella/lazyoc"
-  version "0.2.3"
+  version "0.2.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/katyella/lazyoc/releases/download/v0.2.3/lazyoc_0.2.3_Darwin_x86_64.tar.gz"
-      sha256 "7510b8ac498d97d277f3cf92254bcc0312da053313b0c327c957eb1304f73012"
+      url "https://github.com/katyella/lazyoc/releases/download/v0.2.4/lazyoc_0.2.4_Darwin_x86_64.tar.gz"
+      sha256 "0fb420dddda463f3907740e01477d01480b8f5468cff2d4ca44cd9345465024f"
 
       def install
         bin.install "lazyoc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/katyella/lazyoc/releases/download/v0.2.3/lazyoc_0.2.3_Darwin_arm64.tar.gz"
-      sha256 "0026706e02d971910fdeeb2a43777ae16b2af65453d08604e2a7679abb4f9d9b"
+      url "https://github.com/katyella/lazyoc/releases/download/v0.2.4/lazyoc_0.2.4_Darwin_arm64.tar.gz"
+      sha256 "8ec34389ea2be595e33de313f0405eab807ce3666221690a9e225f76da59059a"
 
       def install
         bin.install "lazyoc"
@@ -29,15 +29,15 @@ class Lazyoc < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/katyella/lazyoc/releases/download/v0.2.3/lazyoc_0.2.3_Linux_x86_64.tar.gz"
-      sha256 "620a883b69df288fc60b607d80cb4684c37044193ac898811d7a3caaf0bd1ace"
+      url "https://github.com/katyella/lazyoc/releases/download/v0.2.4/lazyoc_0.2.4_Linux_x86_64.tar.gz"
+      sha256 "a67501a8ed6ec5086cb13bbf9a5a5753ed3d21afca94aafadbb5de06248120e1"
       def install
         bin.install "lazyoc"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/katyella/lazyoc/releases/download/v0.2.3/lazyoc_0.2.3_Linux_arm64.tar.gz"
-      sha256 "2f92357e85a5069d1f9b6d4915227ab73f26c29e5b9e3baf072fd3cda1698708"
+      url "https://github.com/katyella/lazyoc/releases/download/v0.2.4/lazyoc_0.2.4_Linux_arm64.tar.gz"
+      sha256 "141decac16552030a53a07a4484a23adee8d248716455984c9fd7f331f5cd87f"
       def install
         bin.install "lazyoc"
       end
